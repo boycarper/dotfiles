@@ -25,17 +25,6 @@ alias ssh='env SSH_PWD="$PWD" command ssh'
 # Shortcut to editing local git config
 alias vgit='vim .git/config'
 
-alias r='rails'
-alias h='heroku'
-
-alias rapp='rails new --skip-gemfile --skip-test-unit --database=mysql -m https://raw.githubusercontent.com/fetch/rails-templates/master/default.rb'
-
-alias opendev='open http://$(basename $PWD).dev'
-
-# s3cmd aliases for different s3 accounts
-alias s3koen='s3cmd -c ~/.s3cfg'
-alias s3fetch='s3cmd -c ~/.s3cfg-fetch'
-
 setopt complete_aliases
 
 # Enable bash autocomplete
@@ -54,7 +43,7 @@ fi
 #export PATH=/usr/local/git/bin:$PATH
 
 # HUB
-export GITHUB_USER="koenpunt"
+export GITHUB_USER="boycarper"
 eval "$(hub alias -s)"
 
 # PHP
@@ -67,16 +56,11 @@ eval "$(hub alias -s)"
 export PATH=/usr/local/heroku/bin:$PATH
 
 # AWS credentials
-export EC2_HOME=$HOME/.aws
-export EC2_PRIVATE_KEY=$(echo $HOME/.aws/pk-*.pem)
-export EC2_CERT=$(echo $HOME/.aws/cert-*.pem)
-export AWS_CREDENTIAL_FILE=$HOME/.aws/aws-credential-file.txt
-export PATH="$EC2_HOME/bin:$PATH"
+#export EC2_HOME=$HOME/.aws
+#export EC2_PRIVATE_KEY=$(echo $HOME/.aws/pk-*.pem)
+#export EC2_CERT=$(echo $HOME/.aws/cert-*.pem)
+#export AWS_CREDENTIAL_FILE=$HOME/.aws/aws-credential-file.txt
+#export PATH="$EC2_HOME/bin:$PATH"
+
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
 
-# NVM
-export NVM_DIR="/Users/koenpunt/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads NVM
-
-# Grunt
-eval "$(grunt --completion=zsh)"

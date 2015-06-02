@@ -1,6 +1,6 @@
 [user]
-	name = Koen Punt
-	email = koen@koenpunt.nl
+	name = Boy Carper
+	email = boy@toybot.nl
 [color]
 	diff = auto
 	status = auto
@@ -8,7 +8,6 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	autocrlf = false
-	editor = /usr/local/bin/vim
 [alias]
 	ci = commit
     b = branch
@@ -31,4 +30,4 @@
 [help]
 	autocorrect = 15
 [ghi]
-	token = !security find-internet-password -a koenpunt -s github.com -l 'ghi token' -w
+	token = !security find-internet-password -a boycarper -s github.com -l 'ghi token' -w
